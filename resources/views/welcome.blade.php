@@ -57,6 +57,12 @@
             .footer-brand .h-red {
                 color: #F17373;
             }
+
+            .hr { margin-top: 1em; font-size: 48px; color: gray;}
+            .item { margin-top: 3em;}
+            .item img { box-shadow: 0 0 1px #777;}
+            .item p { width: 63%; margin-left: auto; margin-right: auto;font-weight: bold;}
+
         </style>
     </head>
     <body>
@@ -65,12 +71,21 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel image Demo</div>
-                <img src="{{ $image_path }}"><br/>
-                <img src="{{ $image_path }}"><br/>
-                <img src="{{ $image_path }}"><br/>
-                <img src="{{ $image_path }}"><br/>
+                <div class="item">
+                    <p>Origin Image</p>
+                    <img src="{{ $origin_path }}"><br/>
+                </div>
+                <div class="hr"><i class="fa fa-hand-o-down"></i></div>
+                <div class="item">
+                    <p>Resize To 200 * 200 Image</p>
+                    <img src="{{ $origin_resize_path }}"><br/>
+                </div>
+                <div class="hr"><i class="fa fa-hand-o-down"></i></div>
+                <div class="item">
+                    <p>Resize And Add Watermark Image</p>
+                    <img src="{{ $origin_add_watermark }}"><br/>
+                </div>
             </div>
-
             <footer class="footer-brand">
               <p>< Made With <i class="fa fa-heart h-red"></i> By <a href="http://estgroupe.com/">The EST Group</a> ></p>
             </footer>
