@@ -15,7 +15,7 @@ Welcome to follow `LaravelTips` on wechat, this account will focus on the servic
 ### Table of contents
 
 1. Installation；
-* Configuration in Laravel；
+* Configuration；
 * Basic Usage；
 * More usages.
 
@@ -27,7 +27,69 @@ Welcome to follow `LaravelTips` on wechat, this account will focus on the servic
 composer require intervention/image
 ```
 
-2). Configuration
+2). Integration in Laravel
+
+After installing the image library, register the `Intervention\Image\ImageServiceProvider` in your `config/app.php` configuration file:
+
+```php
+'providers' => [
+    // ...
+    Intervention\Image\ImageServiceProvider::class,
+  ],
+```
+
+Also, add the Image facade to the aliases array in your app configuration file:
+
+```php
+'aliases' => [
+    // ...
+    'Image' => Intervention\Image\Facades\Image::class,
+  ],
+```  
+
+## 2. Configuration
+
+Currently Intervention Image supports two Image processing extensions.
+
+* GD
+* Imagick
+
+Make sure you have one of these installed in your PHP environment, before you start.
+
+You're able to configure Intervention Image to use one of these libraries for all its operations. Just pass the configuration as an array directly into the ImageManager.
+
+Example
+
+```php
+// include composer autoload
+require 'vendor/autoload.php';
+
+// import the Intervention Image Manager Class
+use Intervention\Image\ImageManager;
+
+// create an image manager instance with favored driver
+$manager = new ImageManager(array('driver' => 'imagick'));
+
+// to finally create image instances
+$image = $manager->make('public/foo.jpg')->resize(300, 200);
+You might also use the static version of ImageManager as shown in the example below.
+```
+
+Static Example
+
+```php
+// include composer autoload
+require 'vendor/autoload.php';
+
+// import the Intervention Image Manager Class
+use Intervention\Image\ImageManagerStatic as Image;
+
+// configure with favored image driver (gd by default)
+Image::configure(array('driver' => 'imagick'));
+
+// and you are ready to go ...
+$image = Image::make('public/foo.jpg')->resize(300, 200);
+```
 
 After installing the image library, register the `Intervention\Image\ImageServiceProvider` in your `config/app.php` configuration file:
 
@@ -48,8 +110,6 @@ Also, add the Image facade to the aliases array in your app configuration file:
 
 ```
 
-## 2. Configuration in Laravel
-
 If you're using Laravel, you can pull a configuration file into your application by running the following artisan command.
 
 ```
@@ -65,8 +125,6 @@ return array(
 ```
 
 Currently you can choose between `gd` and `imagick` support.
-
-That's it! :beers::beers::beers:
 
 ## 3. Basic Usage
 
@@ -86,6 +144,8 @@ $img->save('images/new_avatar.jpg');
 // also you can do that like this
 $img = Image::make('images/avatar.jpg')->resize(200, 200)->insert('images/new_avatar.jpg', 'bottom-right', 15, 10);
 ```
+
+That's it! :beers: :beers: :beers:
 
 ## 4. More usages
 
