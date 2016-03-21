@@ -23,6 +23,7 @@
                 text-align: center;
                 display: table-cell;
                 vertical-align: middle;
+                padding-top: 30px;
             }
 
             .content {
