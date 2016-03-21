@@ -1,33 +1,33 @@
-# 说明
+## [中文文档阅读](#)
 
-[Intervention/image](https://github.com/Intervention/image) 是为 Laravel 定制的图片处理扩展包, 此项目为利用此 package 制作的简单 Demo.
-相关的代码在 `App/Http/Controllers.php` 文件中.
+## Description
 
-> 本项目由 [The EST Group](http://est-group.org/) 团队整理发布, 首发地为 [PHPHub 社区](https://phphub.org/), 关于 PHPHub 社区往期的开源作品可 [在此](https://phphub.org/topics/1531) 查看.
+[Intervention/image](https://github.com/Intervention/image) is a PHP image handling and manipulation library providing an easier and expressive way to create, edit, and compose images. The package includes ServiceProviders and Facades for easy Laravel integration.
 
-## 具体安装说明
+> This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/).
 
-请访问此地址: 
+Welcome to follow `LaravelTips` on wechat, this account will focus on the services to serve the laravel developers, we try to help those developers to learning the laravel framework better and faster.
 
-## 安装
+![](http://ww4.sinaimg.cn/large/76dc7f1bjw1f23moqj4qzj20by0bywfa.jpg)
 
-本项目使用 [Laravel](https://laravel.com/docs/5.2) ( [中文文档见此](http://laravel-china.org/docs/5.0) ), 本地开发环境使用 [Homestead](http://laravel-china.org/docs/5.0/homestead) 进行快速部署. 
-下文将在默认读者已经安装好 `Homestead` 情况下进行说明.
+## Installation
 
-### 1. 克隆代码
+This project written in [Laravel5](https://laravel.com/docs/5.2), and using homestead as local development environment. Before read this document, make sure you already install homestead in your local machine.
+
+### 1. Download the source code
 
     https://github.com/zhengjinghua/est-image-demo.git
 
-### 2. 配置本地的 homestead 环境
+### 2. Setup homestead
 
-编辑文件:
+Open `Homestead.yaml` by this command:
 
     homestead edit
 
-对应加入修改:
+Modify it like this:
 
     folders:
-        - map: /Users/.../est-image-demo {你的本地项目地址}
+        - map: /Users/.../est-image-demo {your project path}
           to: /home/vagrant/est-image-demo
 
     sites:
@@ -37,34 +37,32 @@
     databases:
         - image
 
-应用修改:
+Restart homestead:
 
     homestead provision
 
-### 3. 安装依赖
+### 3. Install packages
 
     composer install
-   
-### 4. 生成配置文件
 
-复制 `.env.example` 为 `.env`
+### 4. Generate `.env` file
+
+Copy `.env.example` to `.env`
 
 ```
 cp .env.example .env
 ```
 
-由于此项目没有使用其他复杂的逻辑, 因此无需做其他额外的配置
+Because of this project is very simple, so you don't need do any other configuration.
 
-### 5. 修改 hosts
+### 5. Modify `hosts` file
 
-	sudo vi /etc/hosts
+Open it by this command:
 
-添加
+    sudo vi /etc/hosts
 
-	192.168.10.10  	image.app
-	
-配置完以后浏览器直接访问 http://image.app 即可
+Add this line to file:
 
+    192.168.10.10   image.app
 
-
-
+After do that, you can access http://image.app to check the result.

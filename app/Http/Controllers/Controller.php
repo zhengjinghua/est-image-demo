@@ -25,6 +25,6 @@ class Controller extends BaseController
         /* 上面的逻辑可以通过链式表达式搞定 */
         $img = Image::make('images/avatar.jpg')->resize(200, 200)->insert('images/new_avatar.jpg', 'bottom-right', 15, 10);
 
-        return $img->response('jpg');
+        return view('welcome');
     }
 }
