@@ -37,7 +37,7 @@
             .footer-brand {
                 width: 100%;
                 height: 180px;
-                position: fixed;
+                position: relative;
                 left: 0;
                 bottom: 0;
             }
@@ -56,7 +56,7 @@
 
             .footer-brand .h-red {
                 color: #F17373;
-            }            
+            }
         </style>
     </head>
     <body>
@@ -65,11 +65,15 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel image Demo</div>
+                <img src="{{ $image_path }}"><br/>
+                <img src="{{ $image_path }}"><br/>
+                <img src="{{ $image_path }}"><br/>
+                <img src="{{ $image_path }}"><br/>
             </div>
-        </div>
 
-        <footer class="footer-brand">
-          <p>< Made With <i class="fa fa-heart h-red"></i> By <a href="http://estgroupe.com/">The EST Group</a> ></p>
-        </footer>
+            <footer class="footer-brand">
+              <p>< Made With <i class="fa fa-heart h-red"></i> By <a href="http://estgroupe.com/">The EST Group</a> ></p>
+            </footer>
+        </div>
     </body>
 </html>
