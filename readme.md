@@ -147,7 +147,7 @@ $img = Image::make('images/avatar.jpg')->resize(200, 200)->insert('images/new_av
 
 That's it! :beers: :beers: :beers:
 
-## 4. More usages
+## 4. More usage
 
 * Image Uploads;
 * Image Cache;
