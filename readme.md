@@ -124,13 +124,13 @@ Also, add the Image facade to the aliases array in your app configuration file:
 
 If you're using Laravel, you can pull a configuration file into your application by running the following artisan command.
 
-```
+```shell
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
 ```
 
 In Laravel 5 applications the configuration file is copied to `config/image.php`, With this copy you can alter the image driver settings for you application locally and define which library should be used by all commands:
 
-```
+```php
 return array(
     'driver' => 'imagick'
 );
@@ -140,7 +140,7 @@ Currently you can choose between `gd` and `imagick` support.
 
 ### 3. Basic Usage
 
-```
+```php
 // open an image file and resize it
 $img = Image::make('images/avatar.jpg')->resize(200, 200);
 
