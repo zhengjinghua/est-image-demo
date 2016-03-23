@@ -1,5 +1,4 @@
-
-## for Chinese
+## For Chinese
 
 * [中文文档请点击这里](#)
 
@@ -9,7 +8,7 @@
 
 This project is very simple demo to show you how to use Intervention Image quickly.
 
-> This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/).
+> This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/topics/1903).
 
 ## The Demo
 
