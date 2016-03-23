@@ -1,6 +1,6 @@
 ## For Chinese
 
-* [中文文档请点击这里](#)
+* [中文文档请点击这里](https://phphub.org/topics/1903)
 
 ## Description
 
