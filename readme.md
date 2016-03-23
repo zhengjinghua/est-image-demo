@@ -1,16 +1,23 @@
-## [中文文档阅读](#)
 
-## Description
+## The Demo
+
+Demo is the Source code of this project, is a simple image editing example.
+
+### Screenshots
+
+![](http://ww3.sinaimg.cn/large/76dc7f1bjw1f26mc87s86j20rh14ytc3.jpg)
+
+### Run the demo
+
+You can refer to this [documentation](https://github.com/Aufree/laravel-packages-top100/blob/master/how-to-run-a-laravel-project.md) to know how to run this demo.
+
+## The Tutorial
 
 [Intervention/image](https://github.com/Intervention/image) is a PHP image handling and manipulation library providing an easier and expressive way to create, edit, and compose images. The package includes ServiceProviders and Facades for easy Laravel integration.
 
 This project is very simple demo to show you how to use Intervention Image quickly.
 
 > This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/).
-
-Welcome to follow `LaravelTips` on wechat, this account will focus on the services to serve the laravel developers, we try to help those developers to learning the laravel framework better and faster.
-
-![](http://ww4.sinaimg.cn/large/76dc7f1bjw1f23moqj4qzj20by0bywfa.jpg)
 
 ### Table of contents
 
@@ -156,12 +163,15 @@ That's it! :beers: :beers: :beers:
 
 You can refer to the [documentation](http://image.intervention.io/getting_started/introduction) to learn more about Intervention Image.
 
-## Demo
+## for Chinese
 
-### Screenshots
+* [中文文档请千万 PHPHub 观看](#)
 
-![](http://ww3.sinaimg.cn/large/76dc7f1bjw1f26mc87s86j20rh14ytc3.jpg)
+---
 
-### Run the demo
+欢迎关注 `LaravelTips`, 这是一个专注于为 Laravel 开发者服务, 致力于帮助开发者更好的掌握 Laravel 框架, 提升开发效率的微信公众号.
 
-You can refer to the [documentation](https://github.com/Aufree/laravel-packages-top100/blob/master/how-to-run-a-laravel-project.md) to know how to run this demo.
+![](http://ww4.sinaimg.cn/large/76dc7f1bjw1f23moqj4qzj20by0bywfa.jpg)
+
+
+
