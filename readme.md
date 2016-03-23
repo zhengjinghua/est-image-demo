@@ -1,4 +1,8 @@
 
+## for Chinese
+
+* [中文文档亲点击这里](#)
+
 ## The Demo
 
 Demo is the Source code of this project, is a simple image editing example.
@@ -162,10 +166,6 @@ That's it! :beers: :beers: :beers:
 * URL Manipulation;
 
 You can refer to the [documentation](http://image.intervention.io/getting_started/introduction) to learn more about Intervention Image.
-
-## for Chinese
-
-* [中文文档请千万 PHPHub 观看](#)
 
 ---
 
