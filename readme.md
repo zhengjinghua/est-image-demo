@@ -3,6 +3,14 @@
 
 * [中文文档请点击这里](#)
 
+## Description
+
+[Intervention/image](https://github.com/Intervention/image) is a PHP image handling and manipulation library providing an easier and expressive way to create, edit, and compose images. The package includes ServiceProviders and Facades for easy Laravel integration.
+
+This project is very simple demo to show you how to use Intervention Image quickly.
+
+> This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/).
+
 ## The Demo
 
 Demo is the Source code of this project, is a simple image editing example.
@@ -17,20 +25,14 @@ You can refer to this [documentation](https://github.com/Aufree/laravel-packages
 
 ## The Tutorial
 
-[Intervention/image](https://github.com/Intervention/image) is a PHP image handling and manipulation library providing an easier and expressive way to create, edit, and compose images. The package includes ServiceProviders and Facades for easy Laravel integration.
-
-This project is very simple demo to show you how to use Intervention Image quickly.
-
-> This project was created by [The EST Group](http://est-group.org/) and [PHPHub](https://phphub.org/).
-
 ### Table of contents
 
-1. Installation；
-* Configuration；
-* Basic Usage；
-* More usages.
+1. [Installation](https://github.com/zhengjinghua/est-image-demo/blob/master/readme.md#1-installation);
+* [Configuration](https://github.com/zhengjinghua/est-image-demo/blob/master/readme.md#2-configuration);
+* [Basic Usage](https://github.com/zhengjinghua/est-image-demo/blob/master/readme.md#3-basic-usage);
+* [More usages](https://github.com/zhengjinghua/est-image-demo/blob/master/readme.md#4-more-usage).
 
-## 1. Installation
+### 1. Installation
 
 1). To get started with image, add to your `composer.json` file as a dependency:
 
@@ -58,7 +60,7 @@ Also, add the Image facade to the aliases array in your app configuration file:
   ],
 ```  
 
-## 2. Configuration
+### 2. Configuration
 
 Currently Intervention Image supports two Image processing extensions.
 
@@ -137,7 +139,7 @@ return array(
 
 Currently you can choose between `gd` and `imagick` support.
 
-## 3. Basic Usage
+### 3. Basic Usage
 
 ```
 // open an image file and resize it
@@ -158,7 +160,7 @@ $img = Image::make('images/avatar.jpg')->resize(200, 200)->insert('images/new_av
 
 That's it! :beers: :beers: :beers:
 
-## 4. More usage
+### 4. More usage
 
 * Image Uploads;
 * Image Cache;
@@ -172,6 +174,3 @@ You can refer to the [documentation](http://image.intervention.io/getting_starte
 欢迎关注 `LaravelTips`, 这是一个专注于为 Laravel 开发者服务, 致力于帮助开发者更好的掌握 Laravel 框架, 提升开发效率的微信公众号.
 
 ![](http://ww4.sinaimg.cn/large/76dc7f1bjw1f23moqj4qzj20by0bywfa.jpg)
-
-
-
